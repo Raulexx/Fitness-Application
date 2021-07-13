@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <SearchView
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorBlue"
+            android:paddingLeft="10dp"
+            android:text="Food List"
+            android:textSize="20dp" />
+
+        <ListView
+            android:id="@+id/standard_meal_list"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_marginTop="10dp">
+
+        </ListView>
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recommanded meal"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:textSize="20dp"
+            android:background="@color/colorBlue"/>
+
+        <ListView
+            android:id="@+id/recommended_meal_list"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_marginTop="10dp">
+        </ListView>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorGrey">
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center_vertical"
+                    android:text="Food Name : " />
+
+                <EditText
+                    android:id="@+id/newFoodName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0.5"
+                    android:hint=" e.x Cheeseburger"
+                    android:inputType="textPersonName"
+                    android:textAlignment="textEnd"
+                    android:textSize="15dp"
+                    android:backgroundTint="@color/colorFadeGreen"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:background="@color/colorGrey">
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center_vertical"
+                    android:text="Kcal : " />
+
+                <EditText
+                    android:id="@+id/newFoodKcal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0.5"
+                    android:hint=" g / 100g"
+                    android:inputType="number"
+                    android:textAlignment="textEnd"
+                    android:textSize="15dp"
+                    android:backgroundTint="@color/colorFadeGreen"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:background="@color/colorGrey">
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center_vertical"
+                    android:text="Protein : " />
+
+                <EditText
+                    android:id="@+id/newFoodProtein"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0.5"
+                    android:hint="g / 100g"
+                    android:inputType="number"
+                    android:textAlignment="textEnd"
+                    android:textSize="15dp"
+                    android:backgroundTint="@color/colorFadeGreen"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:background="@color/colorGrey">
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center_vertical"
+                    android:text="Carbs : " />
+
+                <EditText
+                    android:id="@+id/newFoodCarbs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0.5"
+                    android:hint="g / 100g"
+                    android:inputType="number"
+                    android:textAlignment="textEnd"
+                    android:textSize="15dp"
+                    android:backgroundTint="@color/colorFadeGreen"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:background="@color/colorGrey">
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center_vertical"
+                    android:text="Fats : " />
+
+                <EditText
+                    android:id="@+id/newFoodFats"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0.5"
+                    android:hint="g / 100g"
+                    android:inputType="number"
+                    android:textAlignment="textEnd"
+                    android:textSize="15dp"
+                    android:backgroundTint="@color/colorFadeGreen"/>
+            </TableRow>
+
+
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rank of the food after your likings : "
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+            android:textAlignment="center"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+</RelativeLayout>

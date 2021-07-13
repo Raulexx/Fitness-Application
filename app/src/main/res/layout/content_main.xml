@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="50dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:id="@+id/profil_photo"
+                android:layout_weight="0.1"
+                tools:srcCompat="@tools:sample/avatars[11]"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/icon_profile"
+                android:scaleType="fitXY"
+                android:layout_marginStart="20dp" />
+
+             <EditText
+                android:id="@+id/profil_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:paddingTop="25dp"
+                android:text="Nume"
+                android:paddingLeft="20dp"
+                android:textSize="25dp"
+                android:focusable="false"
+                android:enabled="false"
+                android:backgroundTint="@color/colorFadeGreen"
+                 android:textCursorDrawable="@color/colorFadeGreen"
+                android:paddingStart="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Weight : "
+                android:layout_weight="0.5"
+                android:gravity="left"
+                android:textSize="20sp"
+                android:paddingLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/profil_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:enabled="false"
+                android:focusable="false"
+                android:gravity="right"
+                android:inputType="number"
+                android:paddingRight="10dp"
+                android:textSize="20dp"
+                android:backgroundTint="@color/colorFadeGreen"/>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text="Kg"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Height : "
+                android:gravity="left"
+                android:layout_weight="0.5"
+                android:textSize="20dp"
+                android:paddingLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/profil_height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:enabled="false"
+                android:focusable="false"
+                android:gravity="right"
+                android:inputType="number"
+                android:paddingRight="10dp"
+                android:textSize="20dp"
+                android:backgroundTint="@color/colorFadeGreen"/>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text="Cm"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Age : "
+                android:gravity="left"
+                android:layout_weight="0.5"
+                android:textSize="20dp"
+                android:paddingLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/profil_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:enabled="false"
+                android:focusable="false"
+                android:gravity="right"
+                android:inputType="number"
+                android:paddingRight="10dp"
+                android:textSize="20dp"
+                android:backgroundTint="@color/colorFadeGreen"/>
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.02"
+                android:text="years"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="KCal : "
+                android:layout_weight="0.5"
+                android:gravity="left"
+                android:textSize="20dp"
+                android:paddingLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/profil_kcal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:enabled="false"
+                android:focusable="false"
+                android:gravity="right"
+                android:inputType="number"
+                android:paddingRight="10dp"
+                android:textSize="20dp"
+                android:backgroundTint="@color/colorFadeGreen"/>
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.02"
+                android:text="Kcal"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Protein : "
+                android:gravity="left"
+                android:layout_weight="0.5"
+                android:textSize="20dp"
+                android:paddingLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/profil_protein"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:enabled="false"
+                android:focusable="false"
+                android:gravity="right"
+                android:inputType="number"
+                android:paddingRight="10dp"
+                android:textSize="20dp"
+                android:backgroundTint="@color/colorFadeGreen"/>
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text="g"
+                android:textSize="20dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Carbs : "
+                android:layout_weight="0.5"
+                android:gravity="left"
+                android:textSize="20dp"
+                android:paddingLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/profil_carbs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:enabled="false"
+                android:focusable="false"
+                android:gravity="right"
+                android:inputType="number"
+                android:paddingRight="10dp"
+                android:textSize="20dp"
+                android:backgroundTint="@color/colorFadeGreen"/>
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text="g"
+                android:textSize="20dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Fats: "
+                android:gravity="left"
+                android:layout_weight="0.5"
+                android:textSize="20dp"
+                android:paddingLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/profil_fats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:enabled="false"
+                android:focusable="false"
+                android:gravity="right"
+                android:inputType="number"
+                android:paddingRight="10dp"
+                android:textSize="20dp"
+                android:backgroundTint="@color/colorFadeGreen"/>
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text="g"
+                android:textSize="20dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

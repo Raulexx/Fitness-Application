@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Workout"
+    tools:showIn="@layout/app_bar_workout">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Workouts Plan"
+                android:textSize="20dp" />
+
+            <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:id="@+id/workout_chest"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@color/colorBlue">
+
+            <ImageView
+                android:id="@+id/workout_chest_image"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/chestdoi"
+                android:cropToPadding="false" />
+
+            <TextView
+                android:id="@+id/workout_chest_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Chest"
+                android:textSize="40dp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/workout_shoulders"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@color/colorBlue">
+
+            <ImageView
+                android:id="@+id/workout_shoulders_image"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/shouldersdoi"
+                android:cropToPadding="false" />
+
+        <TextView
+            android:id="@+id/workout_shoulders_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Shoulders"
+            android:textSize="40dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/workout_arms"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@color/colorBlue">
+
+            <ImageView
+                android:id="@+id/workout_arms_image"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/armsdoi"
+                android:cropToPadding="false" />
+
+        <TextView
+            android:id="@+id/workout_arms_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Arms"
+            android:textSize="40dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/workout_back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@color/colorBlue">
+
+            <ImageView
+                android:id="@+id/workout_back_image"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/backdoi"
+                android:cropToPadding="false" />
+
+            <TextView
+                android:id="@+id/workout_back_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Back"
+                android:textSize="40dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/workout_abs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@color/colorBlue">
+
+            <ImageView
+                android:id="@+id/workout_abs_image"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/absdoi"
+                android:cropToPadding="false" />
+
+            <TextView
+                android:id="@+id/workout_abs_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Abs"
+                android:textSize="40dp" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/workout_legs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@color/colorBlue">
+
+            <ImageView
+                android:id="@+id/workout_legs_image"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/legsdoi"
+                android:cropToPadding="false" />
+
+            <TextView
+                android:id="@+id/workout_legs_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Legs"
+                android:textSize="40dp" />
+
+        </TableRow>
+
+
+    </TableLayout>
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Custom Workout"
+                android:textSize="20dp" />
+
+            <ListView
+                android:id="@+id/custom_workout_list"
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
